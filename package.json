@@ -1,0 +1,39 @@
+{
+  "name": "directus-extension-duration",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hairmare/directus-extension-duration.git"
+  },
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-pack"
+  ],
+  "directus:extension": {
+    "type": "pack",
+    "hidden": false,
+    "host": "^v9.10.0"
+  },
+  "files": [
+    "interface/dist",
+    "interface/package.json",
+    "!interface/tsconfig.json",
+    "display/dist",
+    "display/package.json",
+    "!interface/tsconfig.json"
+  ],
+  "scripts": {
+    "test": "(cd interface && npm test) && (cd display && npm test)",
+    "build": "(cd interface && directus-extension build) && (cd display && directus-extension build)"
+  },
+  "dependencies": {
+    "directus-extension-display-duration": "file:./display",
+    "directus-extension-interface-duration": "file:./interface"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "9.10.0",
+    "typescript": "^4.6.4",
+    "vue": "^3.2.33"
+  }
+}

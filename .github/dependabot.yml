@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(ci): "
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix(deps): "
+  - package-ecosystem: "npm"
+    directory: "/display"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix(display/deps): "
+  - package-ecosystem: "npm"
+    directory: "/interface"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix(interface/deps): "
