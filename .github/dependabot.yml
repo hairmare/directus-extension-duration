@@ -17,10 +17,10 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix(display/deps): "
+      prefix: "fix(deps): "
   - package-ecosystem: "npm"
     directory: "/interface"
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix(interface/deps): "
+      prefix: "fix(deps): "
