@@ -1,15 +1,7 @@
 # Duration Extentions for Directus
 
-Duration extensions for [Directus](https://directus.io/):
+These have been migrated to [Wellenplan](https://github.com/wellenplan]:
 
-* [directus-extension-interface-duration](./interface/)
-* [directus-extension-display-duration](./display/)
+* [directus-extension-interface-duration](https://github.com/wellenplan/directus-extension-duration-interface)
+* [directus-extension-display-duration](https://github.com/wellenplan/directus-extension-duration-display)
 
-The extensions help manage a numeric field that contains a value
-in seconds.
-
-## Installation
-
-```bash
-npm install directus-extension-duration
-```
